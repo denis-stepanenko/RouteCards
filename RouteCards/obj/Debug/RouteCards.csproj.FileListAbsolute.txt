@@ -1,0 +1,228 @@
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardComponentForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardFramelessComponentForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardModificationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardReplacedComponentForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AddTechProcessOperationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AuthorizationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.NewTechProcessForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.PassportReportForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AssemblyDepartmentReportForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.CardComponentForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.CardDocumentForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.CardForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.CardFramelessComponentForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.CardModificationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.LeanProductionOperationsReportForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.CardReplacedComponentForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.LeanProductionReportForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.CardsForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.CloseOperationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.MechanicalDepartmentReportForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.DocumentForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.DocumentOperationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.DocumentsForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.ExecutorForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.ExecutorsForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.Form1.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.InsertDocumentOperationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.NewCardForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AddDocumentOperationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.OperationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.OperationsForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.Properties.Resources.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.SelectExecutorForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.SelectMaterialForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.SelectMaterialFromProductForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.SelectOrderForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.SelectProductForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.TechProcessDocumentForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.TechProcessesForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.TechProcessForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.TechProcessOperationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.UserForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.UsersForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.csproj.GenerateResource.cache
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.csproj.CoreCompileInputs.cache
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.TrustInfo.xml
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.exe
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.pdb
+D:\Repos2\RouteCards\RouteCards\bin\Debug\RouteCards.exe.manifest
+D:\Repos2\RouteCards\RouteCards\bin\Debug\RouteCards.application
+D:\Repos2\RouteCards\RouteCards\bin\Debug\RouteCards.exe
+D:\Repos2\RouteCards\RouteCards\bin\Debug\RouteCards.pdb
+D:\Repos2\RouteCards\RouteCards\bin\Debug\AgileObjects.AgileMapper.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\AgileObjects.NetStandardPolyfills.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\AgileObjects.ReadableExpressions.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Dapper.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Newtonsoft.Json.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\AgileObjects.AgileMapper.xml
+D:\Repos2\RouteCards\RouteCards\bin\Debug\AgileObjects.NetStandardPolyfills.xml
+D:\Repos2\RouteCards\RouteCards\bin\Debug\AgileObjects.ReadableExpressions.xml
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Dapper.pdb
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Dapper.xml
+D:\Repos2\RouteCards\RouteCards\bin\Debug\Newtonsoft.Json.xml
+D:\Repos2\RouteCards\RouteCards\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.exe.manifest
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.application
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.csproj.CopyComplete
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardUsingTechProcessForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardOperationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.CardOperationForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.ShortRouteListForAssemblyUnitReportForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.RouteListForAssemblyUnitReportForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.RouteCardForProductReportForm.resources
+D:\Repos2\RouteCards\RouteCards\obj\Debug\RouteCards.csproj.AssemblyReference.cache
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\RouteCards.exe.manifest
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\RouteCards.application
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\RouteCards.exe
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\RouteCards.pdb
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\AgileObjects.AgileMapper.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\AgileObjects.NetStandardPolyfills.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\AgileObjects.ReadableExpressions.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Dapper.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Newtonsoft.Json.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\AgileObjects.AgileMapper.xml
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\AgileObjects.NetStandardPolyfills.xml
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\AgileObjects.ReadableExpressions.xml
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Dapper.pdb
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Dapper.xml
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\Newtonsoft.Json.xml
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.csproj.AssemblyReference.cache
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardComponentForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardFramelessComponentForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardModificationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardReplacedComponentForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardUsingTechProcessForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AddCardOperationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AddTechProcessOperationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AuthorizationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.CardOperationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.RouteCardForProductReportForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.RouteListForAssemblyUnitReportForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.ShortRouteListForAssemblyUnitReportForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.NewTechProcessForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.PassportReportForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AssemblyDepartmentReportForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.CardComponentForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.CardDocumentForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.CardForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.CardFramelessComponentForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.CardModificationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.LeanProductionOperationsReportForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.CardReplacedComponentForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.LeanProductionReportForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.CardsForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.CloseOperationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.MechanicalDepartmentReportForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.DocumentForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.DocumentOperationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.DocumentsForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.ExecutorForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.ExecutorsForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.Form1.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.InsertDocumentOperationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.NewCardForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.AddDocumentOperationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.OperationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.OperationsForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.Properties.Resources.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.SelectExecutorForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.SelectMaterialForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.SelectMaterialFromProductForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.SelectOrderForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.SelectProductForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.TechProcessDocumentForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.TechProcessesForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.TechProcessForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.TechProcessOperationForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.UserForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.UsersForm.resources
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.csproj.GenerateResource.cache
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.csproj.CoreCompileInputs.cache
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.TrustInfo.xml
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.exe.manifest
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.application
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.csproj.CopyComplete
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.exe
+D:\Repos2\Новая папка (2)\RouteCards\RouteCards\obj\Debug\RouteCards.pdb

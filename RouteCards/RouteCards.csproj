@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EE3704D-D3F5-4DE3-B245-188707C12C12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RouteCards</RootNamespace>
+    <AssemblyName>RouteCards</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\fs1\upd\RouteCards\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Электронная МСД</ProductName>
+    <MinimumRequiredVersion>1.0.0.77</MinimumRequiredVersion>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>78</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9CF8395AF400A8F64809703885166F6C5607EA8B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RouteCards_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AgileObjects.AgileMapper, Version=1.8.0.0, Culture=neutral, PublicKeyToken=40b730fcfbe52fee, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgileObjects.AgileMapper.1.8.0\lib\net40\AgileObjects.AgileMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AgileObjects.NetStandardPolyfills, Version=1.5.0.0, Culture=neutral, PublicKeyToken=06131ac1c008ad4e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgileObjects.NetStandardPolyfills.1.5.0\lib\net40\AgileObjects.NetStandardPolyfills.dll</HintPath>
+    </Reference>
+    <Reference Include="AgileObjects.ReadableExpressions, Version=2.6.0.0, Culture=neutral, PublicKeyToken=9f54ad81db69da8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgileObjects.ReadableExpressions.2.6.0\lib\net40\AgileObjects.ReadableExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.42\lib\net40\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCardComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCardComponentForm.Designer.cs">
+      <DependentUpon>AddCardComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCardFramelessComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCardFramelessComponentForm.Designer.cs">
+      <DependentUpon>AddCardFramelessComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCardModificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCardModificationForm.Designer.cs">
+      <DependentUpon>AddCardModificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCardReplacedComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCardReplacedComponentForm.Designer.cs">
+      <DependentUpon>AddCardReplacedComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCardUsingTechProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCardUsingTechProcessForm.Designer.cs">
+      <DependentUpon>AddCardUsingTechProcessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCardOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCardOperationForm.Designer.cs">
+      <DependentUpon>AddCardOperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTechProcessOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTechProcessOperationForm.Designer.cs">
+      <DependentUpon>AddTechProcessOperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizationForm.Designer.cs">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\CardOperationRepo.cs" />
+    <Compile Include="Data\TechProcessDocumentRepo.cs" />
+    <Compile Include="Data\TechProcessOperationRepo.cs" />
+    <Compile Include="Data\TechProcessPurchasedProductRepo.cs" />
+    <Compile Include="Data\TechProcessRepo.cs" />
+    <Compile Include="CardOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardOperationForm.Designer.cs">
+      <DependentUpon>CardOperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\LocalClipboardService.cs" />
+    <Compile Include="Infrastructure\MechanicalReportSettings.cs" />
+    <Compile Include="Infrastructure\VersionService.cs" />
+    <Compile Include="Models\ProductRelation.cs" />
+    <Compile Include="Models\TechProcessPurchasedProduct.cs" />
+    <Compile Include="RouteCardForProductReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RouteCardForProductReportForm.Designer.cs">
+      <DependentUpon>RouteCardForProductReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RouteListForAssemblyUnitReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RouteListForAssemblyUnitReportForm.Designer.cs">
+      <DependentUpon>RouteListForAssemblyUnitReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShortRouteListForAssemblyUnitReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShortRouteListForAssemblyUnitReportForm.Designer.cs">
+      <DependentUpon>ShortRouteListForAssemblyUnitReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CardOperation.cs" />
+    <Compile Include="Models\TechProcess.cs" />
+    <Compile Include="Models\TechProcessDocument.cs" />
+    <Compile Include="Models\TechProcessOperation.cs" />
+    <Compile Include="NewTechProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewTechProcessForm.Designer.cs">
+      <DependentUpon>NewTechProcessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassportReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassportReportForm.Designer.cs">
+      <DependentUpon>PassportReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyDepartmentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyDepartmentReportForm.Designer.cs">
+      <DependentUpon>AssemblyDepartmentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardComponentForm.Designer.cs">
+      <DependentUpon>CardComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\CardChangeNoticeRepo.cs" />
+    <Compile Include="Data\CardComponentRepo.cs" />
+    <Compile Include="Data\CardRepairRepo.cs" />
+    <Compile Include="Data\MaterialRepo.cs" />
+    <Compile Include="MechanicalDepartmentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MechanicalDepartmentReportForm.Designer.cs">
+      <DependentUpon>MechanicalDepartmentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\AuthorizationService.cs" />
+    <Compile Include="CardDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardDocumentForm.Designer.cs">
+      <DependentUpon>CardDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardForm.Designer.cs">
+      <DependentUpon>CardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardFramelessComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardFramelessComponentForm.Designer.cs">
+      <DependentUpon>CardFramelessComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardModificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardModificationForm.Designer.cs">
+      <DependentUpon>CardModificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeanProductionOperationsReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeanProductionOperationsReportForm.Designer.cs">
+      <DependentUpon>LeanProductionOperationsReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardReplacedComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardReplacedComponentForm.Designer.cs">
+      <DependentUpon>CardReplacedComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeanProductionReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeanProductionReportForm.Designer.cs">
+      <DependentUpon>LeanProductionReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardsForm.Designer.cs">
+      <DependentUpon>CardsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseOperationForm.Designer.cs">
+      <DependentUpon>CloseOperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\CardModificationRepo.cs" />
+    <Compile Include="Data\OperationRepo.cs" />
+    <Compile Include="Data\UserRepo.cs" />
+    <Compile Include="Infrastructure\Settings.cs" />
+    <Compile Include="Infrastructure\SettingsService.cs" />
+    <Compile Include="Models\CardChangeNotice.cs" />
+    <Compile Include="Models\CardComponent.cs" />
+    <Compile Include="Models\CardModification.cs" />
+    <Compile Include="Models\CardRepair.cs" />
+    <Compile Include="Models\Material.cs" />
+    <Compile Include="Models\Operation.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="OperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperationForm.Designer.cs">
+      <DependentUpon>OperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperationsForm.Designer.cs">
+      <DependentUpon>OperationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceholderTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\CardFramelessComponentRepo.cs" />
+    <Compile Include="Data\CardReplacedComponentRepo.cs" />
+    <Compile Include="Data\CardRepo.cs" />
+    <Compile Include="Data\DocumentOperationRepo.cs" />
+    <Compile Include="Data\DocumentRepo.cs" />
+    <Compile Include="Data\ExecutorRepo.cs" />
+    <Compile Include="Data\OrderRepo.cs" />
+    <Compile Include="Data\ProductRepo.cs" />
+    <Compile Include="Data\RepoBase.cs" />
+    <Compile Include="Data\CardDocumentRepo.cs" />
+    <Compile Include="DocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentForm.Designer.cs">
+      <DependentUpon>DocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentOperationForm.Designer.cs">
+      <DependentUpon>DocumentOperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForm.Designer.cs">
+      <DependentUpon>DocumentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExecutorForm.Designer.cs">
+      <DependentUpon>ExecutorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExecutorsForm.Designer.cs">
+      <DependentUpon>ExecutorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertDocumentOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertDocumentOperationForm.Designer.cs">
+      <DependentUpon>InsertDocumentOperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Card.cs" />
+    <Compile Include="Models\CardFramelessComponent.cs" />
+    <Compile Include="Models\CardReplacedComponent.cs" />
+    <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\DocumentOperation.cs" />
+    <Compile Include="Models\Executor.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductOperation.cs" />
+    <Compile Include="Models\CardDocument.cs" />
+    <Compile Include="NewCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCardForm.Designer.cs">
+      <DependentUpon>NewCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDocumentOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDocumentOperationForm.Designer.cs">
+      <DependentUpon>AddDocumentOperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectExecutorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectExecutorForm.Designer.cs">
+      <DependentUpon>SelectExecutorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectMaterialForm.Designer.cs">
+      <DependentUpon>SelectMaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMaterialFromProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectMaterialFromProductForm.Designer.cs">
+      <DependentUpon>SelectMaterialFromProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectOrderForm.Designer.cs">
+      <DependentUpon>SelectOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectProductForm.Designer.cs">
+      <DependentUpon>SelectProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechProcessDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechProcessDocumentForm.Designer.cs">
+      <DependentUpon>TechProcessDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechProcessesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechProcessesForm.Designer.cs">
+      <DependentUpon>TechProcessesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechProcessForm.Designer.cs">
+      <DependentUpon>TechProcessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechProcessOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechProcessOperationForm.Designer.cs">
+      <DependentUpon>TechProcessOperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCardComponentForm.resx">
+      <DependentUpon>AddCardComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCardFramelessComponentForm.resx">
+      <DependentUpon>AddCardFramelessComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCardModificationForm.resx">
+      <DependentUpon>AddCardModificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCardReplacedComponentForm.resx">
+      <DependentUpon>AddCardReplacedComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCardUsingTechProcessForm.resx">
+      <DependentUpon>AddCardUsingTechProcessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCardOperationForm.resx">
+      <DependentUpon>AddCardOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTechProcessOperationForm.resx">
+      <DependentUpon>AddTechProcessOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorizationForm.resx">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardOperationForm.resx">
+      <DependentUpon>CardOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RouteCardForProductReportForm.resx">
+      <DependentUpon>RouteCardForProductReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RouteListForAssemblyUnitReportForm.resx">
+      <DependentUpon>RouteListForAssemblyUnitReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShortRouteListForAssemblyUnitReportForm.resx">
+      <DependentUpon>ShortRouteListForAssemblyUnitReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewTechProcessForm.resx">
+      <DependentUpon>NewTechProcessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassportReportForm.resx">
+      <DependentUpon>PassportReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssemblyDepartmentReportForm.resx">
+      <DependentUpon>AssemblyDepartmentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardComponentForm.resx">
+      <DependentUpon>CardComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardDocumentForm.resx">
+      <DependentUpon>CardDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardForm.resx">
+      <DependentUpon>CardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardFramelessComponentForm.resx">
+      <DependentUpon>CardFramelessComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardModificationForm.resx">
+      <DependentUpon>CardModificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeanProductionOperationsReportForm.resx">
+      <DependentUpon>LeanProductionOperationsReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardReplacedComponentForm.resx">
+      <DependentUpon>CardReplacedComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeanProductionReportForm.resx">
+      <DependentUpon>LeanProductionReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardsForm.resx">
+      <DependentUpon>CardsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseOperationForm.resx">
+      <DependentUpon>CloseOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MechanicalDepartmentReportForm.resx">
+      <DependentUpon>MechanicalDepartmentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentForm.resx">
+      <DependentUpon>DocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentOperationForm.resx">
+      <DependentUpon>DocumentOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsForm.resx">
+      <DependentUpon>DocumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutorForm.resx">
+      <DependentUpon>ExecutorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutorsForm.resx">
+      <DependentUpon>ExecutorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertDocumentOperationForm.resx">
+      <DependentUpon>InsertDocumentOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCardForm.resx">
+      <DependentUpon>NewCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDocumentOperationForm.resx">
+      <DependentUpon>AddDocumentOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationForm.resx">
+      <DependentUpon>OperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationsForm.resx">
+      <DependentUpon>OperationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SelectExecutorForm.resx">
+      <DependentUpon>SelectExecutorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMaterialForm.resx">
+      <DependentUpon>SelectMaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMaterialFromProductForm.resx">
+      <DependentUpon>SelectMaterialFromProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectOrderForm.resx">
+      <DependentUpon>SelectOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectProductForm.resx">
+      <DependentUpon>SelectProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechProcessDocumentForm.resx">
+      <DependentUpon>TechProcessDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechProcessesForm.resx">
+      <DependentUpon>TechProcessesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechProcessForm.resx">
+      <DependentUpon>TechProcessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechProcessOperationForm.resx">
+      <DependentUpon>TechProcessOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\RouteCards.Models.Card.datasource" />
+    <None Include="Properties\DataSources\RouteCards.Models.CardComponent.datasource" />
+    <None Include="Properties\DataSources\RouteCards.Models.CardDocument.datasource" />
+    <None Include="Properties\DataSources\RouteCards.Models.CardFramelessComponent.datasource" />
+    <None Include="Properties\DataSources\RouteCards.Models.CardModification.datasource" />
+    <None Include="Properties\DataSources\RouteCards.Models.CardOperation.datasource" />
+    <None Include="Properties\DataSources\RouteCards.Models.CardRepair.datasource" />
+    <None Include="Properties\DataSources\RouteCards.Models.CardReplacedComponent.datasource" />
+    <None Include="Properties\DataSources\RouteCards.Models.DocumentOperation.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="de\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="fr\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="fr\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="fr\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="it\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="it\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="it\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ko\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ko\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ko\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="pt\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="pt\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="pt\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-CHS\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-CHS\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-CHS\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-CHT\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-CHT\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-CHT\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-HANS\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-HANS\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-HANS\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-HANT\Microsoft.ReportViewer.Common.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-HANT\Microsoft.ReportViewer.DataVisualization.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-HANT\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

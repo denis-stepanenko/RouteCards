@@ -1,0 +1,201 @@
+drop table RCExecutors
+drop table RCDocumentOperations
+drop table RCDocuments
+drop table RCCards
+
+create table RCCards
+(
+	Id int identity (1,1) primary key,
+	Number varchar(200),
+	ProductCode varchar(200),
+	ProductName varchar(500),
+	ProductCount int,
+	Stage varchar(100),
+	GroupName varchar(100),
+	Direction varchar(100),
+	ClientOrder varchar(100),
+	Department int,
+	Route varchar(400),
+	FactoryNumber varchar(200),
+	PickingListNumber varchar(200),
+	OwnerProductName varchar(500),
+	MaterialCode varchar(40),
+	MaterialName varchar(200),
+	MaterialParameter varchar(800),
+	IsProtectedFromStaticElectricity bit
+)
+
+
+
+create table RCDocuments
+(
+	Id int identity(1,1) primary key,
+	CardId int foreign key references RCCards (Id) on delete cascade not null,
+	Number varchar(100),
+	Department int,
+	Position int
+)
+
+
+create table RCDocumentOperations
+(
+	Id int identity(1,1) primary key,
+	DocumentId int foreign key references RCDocuments (Id) on delete cascade not null,
+	Code varchar(100),
+	Name varchar(300),
+	Department int,
+	Description varchar(500),
+	ExecutorId int,
+	Labor decimal(18, 3),
+	Count int,
+	StartDate DateTime,
+	EndDate DateTime,
+	Position int,
+	Number varchar(3)
+)
+
+create table RCExecutors
+(
+	Id int identity(1,1) primary key,
+	FirstName varchar(200),
+	SecondName varchar(200),
+	Patronymic varchar(200),
+	Department int
+)
+
+
+
+create table RCCardDocuments
+(
+	Id int identity(1,1) primary key,
+	CardId int foreign key references RCCards (Id) on delete cascade not null,
+	Name varchar(500)
+)
+
+
+create table RCCardFramelessComponents
+(
+	Id int identity(1,1) primary key,
+	CardId int foreign key references RCCards (Id) on delete cascade not null,
+	Code varchar(200),
+	Name varchar(500),
+	DateOfIssueForProduction date,
+	DateOfSealing date,
+	DaysBeforeSealing int
+)
+
+create table RCCardComponents
+(
+	Id int identity(1,1) primary key,
+	CardId int foreign key references RCCards (Id) on delete cascade not null,
+	Code varchar(500),
+	Name varchar(500),
+	FactoryNumber varchar(100),
+	AccompanyingDocument varchar(500),
+	Count int
+)
+
+
+create table RCCardReplacedComponents
+(
+	Id int identity(1,1) primary key,
+	CardId int foreign key references RCCards (Id) on delete cascade not null,
+	Code varchar(200),
+	Name varchar(500),
+	FactoryNumber varchar(400),
+	ReplacementReason varchar(800),
+	ExecutorId int,
+	Date DateTime
+)
+
+create table RCCardModifications
+(
+	Id int identity(1,1) primary key,
+	CardId int foreign key references RCCards (Id) on delete cascade not null,
+	Code varchar(200),
+	Name varchar(500),
+	ExecutorId int,
+	DocumentNumber varchar(200)
+)
+
+create table RCCardRepairs
+(
+	Id int identity(1,1) primary key,
+	CardId int foreign key references RCCards (Id) on delete cascade not null,
+	Code varchar(500),
+	Name varchar(500),
+	Reason varchar(8000),
+	ExecutorId int,
+	StartDate date,
+	EndDate date,
+	[Date] date
+)
+
+create table RCCardChangeNotices
+(
+	Id int identity(1,1) primary key,
+	CardId int foreign key references RCCards (Id) on delete cascade not null,
+	Name varchar(8000),
+	[Date] date
+)
+
+create table RCOperations
+(
+	Id int identity(1,1) primary key,
+	Code varchar(200) unique,
+	Name varchar(500),
+	GroupName varchar(500),
+	Department int
+)
+
+create table RCUsers
+(
+	Id int identity(1,1) primary key,
+	Name varchar(500),
+	Password varchar(15),
+	RoleId int,
+	Department int
+)
+
+create table RCTechProcesses
+(
+	Id int identity(1, 1) primary key,
+	ProductCode varchar(500),
+	ProductName varchar(500),
+	Description varchar(1000),
+	CreatorName varchar(100)
+)
+
+create table RCTechProcessDocuments
+(
+	Id int identity(1,1) primary key,
+	TechProcessId int foreign key references RCTechProcesses (Id) on delete cascade not null,
+	Name varchar(500)
+)
+
+create table RCTechProcessOperations
+(
+	Id int identity(1,1) primary key,
+	TechProcessId int foreign key references RCTechProcesses (Id) on delete cascade not null,
+	Code varchar(100),
+	Name varchar(300),
+	Department int,
+	Count int,
+	Position int,
+	Description varchar(500),
+)
+
+
+insert into RCExecutors
+(FirstName, SecondName, Patronymic, Department)
+select 
+substring(Famalio, 1, charindex(' ', Famalio)-1),  
+substring(substring(Famalio, charindex(' ', Famalio)+1, len(Famalio)), 1, charindex(' ', substring(Famalio, charindex(' ', Famalio)+1, len(Famalio)))) ,
+substring(substring(Famalio, charindex(' ', Famalio)+1, len(Famalio)), charindex(' ', substring(Famalio, charindex(' ', Famalio)+1, len(Famalio))), len(substring(Famalio, charindex(' ', Famalio)+1, len(Famalio)))),
+convert(int, substring(Otdel, 1, 3)) from TempKadry 
+where substring(otdel, 1, 3) in ('004', '005', '006', '013', '017', '080', '082', '046')
+
+
+insert into RCUsers
+(Name, RoleId, Department, Password)
+select Name, RoleId, Department, convert(varchar(100), DecryptByPassPhrase('m14780', [Password])) from CRUsers
